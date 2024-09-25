@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from app.config import system_prompt_builder
 
 # AWS configuration
-PROFILE_NAME = "fireminddev"
+PROFILE_NAME = ""
 REGION_NAME = "eu-west-2"
 session = boto3.Session(profile_name=PROFILE_NAME, region_name=REGION_NAME)
 bedrock = session.client("bedrock-runtime", region_name="us-east-1")
